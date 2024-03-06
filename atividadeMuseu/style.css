@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #fff;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+}
+
+.top-container{
+    background-image: url(img/fundo.png);
+    position: absolute;
+    width: 100%;
+    height: 23%;    
+}
+
+#logo{
+    position: relative;
+    top: 25px;
+    left: 100px;
+}
+
+.navbar-container{
+    background-color: transparent;
+    position: relative;
+    left: 45%;
+}
+
+.navbar-container a{
+    padding-right: 15px;
+    text-decoration: none;
+    color: #9F6F1F;
+    font-weight: 550;
+    font-size: 14px;
+}
+
+.content-container{
+    position: absolute;
+    background-color: transparent;
+    width: 82%;
+    top: 70px;
+    left: 100px;
+    display: flex;
+}
+
+.left-container{
+    background-color: transparent;
+    width: 65%;
+    height: 100%;
+    float: left;
+    color: #4C8B40;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#fotomuseu{
+    height: 320px;
+    width: 710px;
+    border-radius: 5px;
+}
+
+.video-container{
+    background-color: transparent;
+    position: relative;
+    margin: 20px;
+    width: 44%;
+    height: 19%;
+}
+
+.video-container h5{
+    margin-bottom: 15px;
+}
+
+.video-container iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.maps-container{
+    background-color: transparent;
+    position: relative;
+    margin: 20px;
+    width: 44%;
+    height: 19%;
+}
+
+.maps-container h5{
+    margin-bottom: 15px;
+}
+
+.maps-container iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.exposicoes-container{
+    background-color: transparent;
+    position: relative;
+    margin: 20px;
+    width: 44%;
+    height: 19%;
+}
+
+.exposicoes-container ul{
+    position: relative;
+    left: 50px;
+}
