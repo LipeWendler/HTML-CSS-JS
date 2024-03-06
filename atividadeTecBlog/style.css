@@ -6,8 +6,20 @@
 body{
     background-color: #ddd;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display: flex;
 }
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+#footer{
+    background-color: #6cd715;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
 
 .header-container{
     background-color: #6cd715;
@@ -53,15 +65,15 @@ body{
 
 /*Container dos Posts*/
 .primary-content{
-    position: absolute;
+    position: relative;
     background-color: transparent;
     margin: 10px;
     width: 80%;
     height: 230%;
-    padding: 20px;
-    top: 110px;
+    padding: 15px;
+    top: 115px;
     left: 180px;
-    bottom: 100px;
+    margin-bottom: 6rem;
 }
 
 .primary-content h1{
@@ -98,6 +110,7 @@ body{
     width: 70%;
     padding: 15px;
     border-radius: 10px;
+    float: left;
 }
 
 /*Segundo Post*/
@@ -106,12 +119,29 @@ body{
     width: 70%;
     padding: 15px;
     margin-top: 30px;
+    margin-bottom: 30px;
     border-radius: 10px;
+    float: left;
 }
 
 /*Posts Recentes*/
 .newest-posts{
-    position: relative;
-    background-color: #000;
-    width: 10%; 
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 23%;
+    height: 22%;
+    float:right;
+}
+
+.newest-posts h1{
+    background-color: #6cd715;
+    color: #fff;
+    padding: 10px;
+    padding-left: 40px;
+    border-radius: 10px 10px 0 0;
+}
+
+.newest-posts img, h4, p, a{
+    padding-left: 10px;
+    width: 90%;
 }
