@@ -9,6 +9,7 @@ body{
     display: flex;
 }
 
+/*Cabeçalho*/
 .top-container{
     background-image: url(img/fundo.png);
     position: absolute;
@@ -22,6 +23,7 @@ body{
     left: 100px;
 }
 
+/*Barra de navegação do cabeçalho*/
 .navbar-container{
     background-color: transparent;
     position: relative;
@@ -36,6 +38,7 @@ body{
     font-size: 14px;
 }
 
+/*Conteúdos sobre o museu*/
 .content-container{
     position: absolute;
     background-color: transparent;
@@ -43,8 +46,10 @@ body{
     top: 70px;
     left: 100px;
     display: flex;
+    letter-spacing: -1px;
 }
 
+/*Conteúdo disposto ao lado esquerdo*/
 .left-container{
     background-color: transparent;
     width: 65%;
@@ -61,12 +66,13 @@ body{
     border-radius: 5px;
 }
 
+/*Box com info do Vídeo*/
 .video-container{
     background-color: transparent;
     position: relative;
     margin: 20px;
     width: 44%;
-    height: 19%;
+    height: 170px;
 }
 
 .video-container h5{
@@ -78,12 +84,13 @@ body{
     height: 100%;
 }
 
+/*Box com info do Mapa*/
 .maps-container{
     background-color: transparent;
     position: relative;
     margin: 20px;
     width: 44%;
-    height: 19%;
+    height: 170px;
 }
 
 .maps-container h5{
@@ -95,29 +102,64 @@ body{
     height: 100%;
 }
 
+/*Box com info das Exposições*/
 .exposicoes-container{
     background-color: transparent;
     position: relative;
-    margin: 20px;
+    margin-left: 20px;
+    margin-top: 50px;
     width: 44%;
     height: 19%;
 
 }
 
-.exposicoes-container h5{
+/*Personalização dos títulos Exposiçõe/Anos de História*/
+.exposicoes-container h5, .anosdehistoria-container h5{
     margin-bottom: 20px;
-    font-size: 15px;
     font-weight: 600;
 }
 
-.exposicoes-container ul{
+.exposicoes-container li{
     position: relative;
-    left: 50px;
+    left: 25px;
+    margin-top: 3px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
 }
 
-.exposicoes-container li{
-    margin-top: 14px;
-    font-size: 14px;
+.exposicoes-container span{
+    color: #9F6F1F;
+    font-weight: 400;
+    letter-spacing: 0px;
+}
+
+.exposicoes-container a{
+    text-decoration: none;
+    color: #9F6F1F;
     font-weight: 500;
-    text-decoration: color(#9F6F1F);
+}
+
+.anosdehistoria-container{
+    background-color: transparent;
+    position: relative;
+    margin-left: 40px;
+    margin-top: 50px;
+    width: 44%;
+    height: 19%;
+}
+
+.anosdehistoria-container p{
+    color: #000;
+    font-size: 13px;
+    letter-spacing: 0px;
+    margin-bottom: 10px;
+}
+
+.anosdehistoria-container a{
+    text-decoration: none;
+    color: #9F6F1F;
+    font-size: 14px;
+    font-weight: bold;
 }
