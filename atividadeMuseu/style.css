@@ -260,7 +260,7 @@ body{
     grid-auto-flow: row;
 }
 
-.foto1, .foto2, .foto3, .foto4{
+.fundo{
     background-image: url(img/fundo-foto.png);
     background-repeat: no-repeat;
     text-align: center;
