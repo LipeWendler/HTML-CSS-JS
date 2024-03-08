@@ -28,6 +28,7 @@ body{
     background-color: transparent;
     position: relative;
     left: 45%;
+    width: 550px;
 }
 
 .navbar-container a{
@@ -35,7 +36,7 @@ body{
     text-decoration: none;
     color: #9F6F1F;
     font-weight: 550;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 /*Conteúdos sobre o museu*/
@@ -43,7 +44,7 @@ body{
     position: absolute;
     background-color: transparent;
     width: 82%;
-    top: 70px;
+    top: 80px;
     left: 100px;
     display: flex;
     letter-spacing: -1px;
@@ -113,12 +114,13 @@ body{
 
 }
 
-/*Personalização dos títulos Exposiçõe/Anos de História*/
+/*Personalização dos títulos Exposições/Anos de História*/
 .exposicoes-container h5, .anosdehistoria-container h5{
     margin-bottom: 20px;
     font-weight: 600;
 }
 
+/*Personalização itens lista Exposições*/
 .exposicoes-container li{
     position: relative;
     left: 25px;
@@ -141,6 +143,7 @@ body{
     font-weight: 500;
 }
 
+/*Personalização Container Anos de Historia*/
 .anosdehistoria-container{
     background-color: transparent;
     position: relative;
@@ -162,4 +165,142 @@ body{
     color: #9F6F1F;
     font-size: 14px;
     font-weight: bold;
+}
+
+/*Personalização container conteudos disposta à direita*/
+.right-container{
+    background-color: #EBE7DD;
+    float: right;
+    margin-left: 20px;
+    width: 350px;
+    height: 830px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#depoimento{
+    width: 350px;
+    height: 320px;
+}
+
+/*Personalização container Faça uma visita*/
+.form-container{
+    background-color: #CDC8B1;
+    position: relative;
+    margin-top: 15px;
+    padding: 20px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-container h5{
+    background-color: transparent;
+    position: relative;
+    color: #9F6F1F;
+    width: 100%;
+    height: 30px;
+    float: left;
+}
+
+.form-container span{
+    position: relative;
+    font-size: 13px;
+    left: 13px;
+}
+
+.form-container input{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#data{
+    width: 80px;
+}
+
+#pessoas{
+    width: 33px;
+}
+
+#disponibilidade{
+    background-color: #9B9271;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: -1px;
+    font-size: 14px;
+    color: #fff;
+    width: 300px;
+    height: 28px;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/*Personalização Galeria Fotos*/
+.fotos-container{
+    background-color: transparent;
+    position: relative;
+    left: 30px;
+    margin-bottom: 50px;
+}
+
+.fotos-container h5{
+    color: #9F6F1F;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.fotos{
+    margin-left: 10px;
+    display: grid;
+    grid-template-areas: 100px;
+    grid-template-rows: repeat(2, 110px);
+    grid-template-columns: repeat(2, 110px);
+    gap: 30px;
+    grid-auto-flow: row;
+}
+
+.foto1, .foto2, .foto3, .foto4{
+    background-image: url(img/fundo-foto.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 125px;
+    height: 125px;
+    padding-top: 20px;
+}
+
+/*Personalização Rodapé*/
+.bottom-container{
+    background-color: transparent;
+    position: absolute;
+    top: 150%;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.bottom-container img{
+    width: 600px;
+}
+
+.bottom-navbar{
+    margin-top: 30px;
+} 
+
+.bottom-navbar a{
+    text-decoration: none;
+    text-transform: lowercase;
+    color:#9F6F1F;
+    padding-right: 20px;
+    font-size: 13px;
+}
+
+.info-copyright{
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.info-copyright span{
+    padding-left: 10px;
+    color: #9F6F1F;
 }
