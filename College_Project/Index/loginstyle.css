@@ -1,0 +1,178 @@
+/*Login Page*/
+body{
+    background-image: url("images/fundologin.jpg") ;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width:761px){
+.loginpage{
+    margin: auto;
+    width: 100%;
+    padding: 3px;
+}
+
+.logopic{
+    width: 20%;
+    margin: auto;
+    padding-left: 25%;
+    padding-top: 13%;
+}
+
+.loginbox{
+    background-image: linear-gradient(90deg, rgb(61, 58, 224),  rgb(123, 121, 200), rgb(167, 166, 242));
+    border: 4px ridge rgb(64, 62, 212);
+    border-radius: 10px;
+    position: relative;
+    left: 50px;
+    padding: 10px;
+    width: 25%;
+    height: 100px;
+}
+
+.profilepic{
+    margin-bottom: 40px;
+    background-color: rgb(220, 220, 220);
+    border: 3px solid rgb(64, 62, 212);
+    border-radius: 10px;
+    width: 70px;
+}
+
+.logopic, .loginbox{
+    display: inline-block;
+}
+
+.loginbutton{
+    background-color: rgb(12, 187, 109);
+    border-radius: 5px;
+    width: 15%;
+    height: 30px;
+    position: relative;
+    left: 90px;
+    top: 8px;
+    padding: 1px;
+}
+
+.rightarrow{
+    width: 60%;
+}
+
+form, label{
+    display: inline-block;
+}   
+
+form {
+    width: 32%;
+    position: relative;
+    bottom: 40%;
+    left: 5%;
+  }
+
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    font-weight: bold;
+}
+
+input {
+    display: inline-block;
+    width: 200%;
+    border: 3px ridge rgb(64, 62, 212);
+    padding-left: 10%;
+    border-radius: 5%;
+  }
+
+footer{
+    position:absolute;
+    width:35%;
+    bottom:0%;
+}
+}
+
+
+@media screen and (max-width:760px){
+    .loginpage{
+        margin: auto;
+        width: 100%;
+        padding: 3px;
+    }
+    
+    .logopic{
+        width: 20%;
+        margin: auto;
+        padding-left: 25%;
+        padding-top: 13%;
+    }
+    
+    .loginbox{
+        background-image: linear-gradient(90deg, rgb(61, 58, 224),  rgb(123, 121, 200), rgb(167, 166, 242));
+        border: 4px ridge rgb(64, 62, 212);
+        border-radius: 10px;
+        position: relative;
+        left: 50px;
+        padding: 10px;
+        width: 25%;
+        height: 100px;
+    }
+    
+    .profilepic{
+        margin-bottom: 40px;
+        background-color: rgb(220, 220, 220);
+        border: 3px solid rgb(64, 62, 212);
+        border-radius: 10px;
+        width: 70px;
+    }
+    
+    .logopic, .loginbox{
+        display: inline-block;
+    }
+    
+    .loginbutton{
+        background-color: rgb(187, 38, 12);
+        border-radius: 5px;
+        width: 15%;
+        height: 30px;
+        position: relative;
+        left: 90px;
+        top: 8px;
+        padding: 1px;
+    }
+    
+    .rightarrow{
+        width: 60%;
+    }
+    
+    form, label{
+        display: inline-block;
+    }   
+    
+    form {
+        width: 100px;
+        position: relative;
+        bottom: 40px;
+        left: 10px;
+      }
+    
+    label{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: right;
+        font-weight: bold;
+    }
+    
+    input {
+        display: inline-block;
+        width: 200%;
+        border: 2px solid rgb(64, 62, 212);
+        padding-left: 10px;
+        border-radius: 5px;
+      }
+    
+    footer{
+        position:absolute;
+        width:35%;
+        bottom:0px;
+    }
+    }
