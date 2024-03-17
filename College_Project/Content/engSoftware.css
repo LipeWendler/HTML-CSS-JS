@@ -18,7 +18,8 @@ body {
     display: flex;
     align-items: center;
     padding-left: 20px;
-    gap: 30px;
+    gap: 20px;
+    z-index: 2;
 }
 
 /*Linhas de divisão*/
@@ -70,29 +71,39 @@ body {
     font-weight: 600;
 }
 
+/*CONTAINER CONTEUDO*/
 .content-container {
-    padding: 20px;
-    text-align: center;
-    position: relative;
-}
-
-.content-container h1 {
-    background-color: #fff;
-    font-size: 2rem;
+    background-color: transparent;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 71em;
+    height: 36.8em;
+    right: 0;
+    top: 2.7em;
+    text-align: center;
 }
 
-/*CONTENT MEIO*/
+.content-container h1{
+    margin-top: 1em;
+    color: #ffffff;
+}
+
 .content-container img {
-    width: 15rem;
-    height: auto;
-    margin-top: 20px;
-
+    background-color: #fff;
+    border-radius: 2em;
+    box-shadow: 0 0 7px rgb(0, 0, 0.15);
+    margin: 2em;
 }
 
+.content-container p{
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.content-container span{
+    color: #00BF63;
+    font-weight: 600;
+}
 
 /*NAVBAR ESQUERDA*/
 .leftnavbar-container {
@@ -100,8 +111,8 @@ body {
     border: 1px solid #5d5d5d;
     position: fixed;
     top: 2.55rem;
-    width: 13.8rem;
-    height: 36.9rem;
+    width: 14rem;
+    height: 37rem;
     padding-left: 2px;
     display: flex;
     flex-direction: column;
