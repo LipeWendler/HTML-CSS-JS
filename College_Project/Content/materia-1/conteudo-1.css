@@ -89,9 +89,10 @@ body {
 }
 
 .content-container p {
+    background-color: #00BF63;
     color: #d0d0d0;
     font-size: 1.2em;
-    margin-left: 4rem;
+    margin-left: rem;
 
 }
 
