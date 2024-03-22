@@ -1,9 +1,9 @@
-*{
+* {
     margin: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
-body{
+body {
     /*CORES: #222222, #ffde59, #ff914d*/
     background-color: #ddd;
     background-attachment: fixed;
@@ -13,7 +13,7 @@ body{
 }
 
 /*NAVBAR*/
-.navbar-container{
+.navbar-container {
     background-color: rgba(0, 0, 0.15, 0.8);
     position: fixed;
     z-index: 1;
@@ -24,25 +24,26 @@ body{
     padding-left: 1.5em;
 }
 
-#logo{
+#logo {
     width: 5em;
 }
 
 /*Company title*/
-.navbar-container h1{
+.navbar-container h1 {
     color: #ffde59;
     font-size: 2.5em;
     margin-left: 0.3em;
 }
-.navbar-container span{
+
+.navbar-container span {
     color: #fff;
 }
 
-.navbar-links{
+.navbar-links {
     margin-left: 25em;
 }
 
-.navbar-item{
+.navbar-item {
     border-radius: 0.8em;
     padding: 0.6em;
     padding-left: 1.7em;
@@ -52,35 +53,71 @@ body{
     color: #ffde59;
 }
 
-.navbar-item:hover{
+.navbar-item:hover {
     background-color: #fff;
     color: #e6c339;
     font-weight: 600;
     transition: all 0.4s;
 }
 
-.slider{
-    position: absolute;
-    transform: translate(20%);
-    margin-top: 2rem;
-    width: 70%;
-    overflow: hidden;
+section {
+    height: 40rem;
 }
 
-.slider-wrapper{
+/*HOME CONTENT - FIRST SECTION*/
+.bg-image img{
+    position: absolute;
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.welcome-container {
+    padding-top: 6.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.home-title {
+    position: relative;
+    margin-top: 4rem;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+}
+
+.home-text {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5em;
+    margin-right: 5em;
+    padding: 2em;
+    gap: 8em;
+    font-size: 1.4em;
+}
+
+.left-text{
+    float: left;
+}
+
+
+/*CATALOG CONTENT - SECOND SECTION*/
+.card-container {
     display: flex;
 }
 
-.slider img{
-    width: 60em;
+.card {
+    background-color: rgba(0, 0, 0.15, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    margin: 1.5em;
+    height: 30em;
+    color: #e6c339;
+}
+
+.card img {
+    position: relative;
+    width: 25em;
     aspect-ratio: 16/9;
-}
-
-.slider-nav{
-    background-color: #e6c339;
-    position: absolute;
-    width: 100rem;
-}
-
-.button{
 }
