@@ -66,12 +66,13 @@ section {
 }
 
 /*HOME CONTENT - FIRST SECTION*/
-.bg-image img{
+.home-bg img {
     position: absolute;
     aspect-ratio: 16/9;
     width: 100%;
-    height: 113%;
+    height: 114%;
     opacity: 0.8;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
 }
 
 .welcome-container {
@@ -101,29 +102,45 @@ section {
 }
 
 /*CATALOG CONTENT - SECOND SECTION*/
-#categories{
-    padding-top: 5rem;
+.categories-bg img {
+    position: absolute;
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: 114%;
+    opacity: 0.8;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
 }
 
 .categories-container {
+    padding-top: 4.9em;
     display: flex;
     flex-wrap: wrap;
 }
 
-.categories-title{
+.categories-title {
     color: #ffde59;
     width: 100%;
     text-align: center;
     font-size: 2em;
+    z-index: 1;
 }
 
-.categories-title i{
+.categories-title i {
     color: #fff;
+}
+
+.categories-container a{
+    z-index: 1;
+    text-decoration: none;
+}
+
+.categories-container a:hover{
+    
 }
 
 /*Cards stylization*/
 .card {
-    background-color: rgba(0, 0, 0.15, 0.8);
+    background-color: rgba(0, 0, 0.15, 0.9);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     margin: 1.5em;
     height: 27.5em;
@@ -136,12 +153,12 @@ section {
     aspect-ratio: 16/9;
 }
 
-.card h2{
+.card h2 {
     margin: 0.3em;
     font-size: 1.5em;
 }
 
-.card ul{
+.card ul {
     margin: 0.7em;
     font-size: 1.3em;
     font-weight: 600;
