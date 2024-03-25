@@ -18,15 +18,14 @@ body {
     top: 10%;
     left: 20%;
     display: flex;
-    text-align: center;
 }
 
+/*GENERAL CONFIGS*/
 form{
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 20em;
     gap: 1em;
-    margin-left: 5%;
 }
 
 input{
@@ -36,34 +35,62 @@ input{
     font-size: 1em;
 }
 
-button{
-    border: none;
-    border-radius: 0.8em;
-    padding: 0.3em;
-    font-size: 1.2em;
-    margin-top: 2em;
-}
-
 ::placeholder{
     padding: 0.3em;
     opacity: 0.6;
 }
 
+
 h1{
-    margin-bottom: 2em
+    margin-bottom: 1em
 }
 
+.forgot-password{
+    margin-top: 3em;
+    text-decoration: none;
+    color: #000;
+    font-size: 0.85em;
+}
+
+.forgot-password:hover{
+    text-decoration: underline;
+}
+
+.btn{
+    background-color: #ffde59;
+    border-radius: 1em;
+    box-shadow: 0 0 5px rgb(0, 0, 1, 0.2);
+    text-decoration: none;
+    text-align: center;
+    width: 12em;
+    height: 2em;
+    padding-top: 0.4em;
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 0 0 5px rgb(0, 0, 1, 0.2);
+    margin-top: 2em;
+}
+
+/*REGISTER - Container*/
 .left-container {
-    float: left;
     background-color: #ddd;
     border-radius: 3rem 0 0 3rem; 
     width: 50%;
-    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
+
+
+
+
+/*LOGIN - Container*/
 .right-container {
-    float: right;
     background-color: #ffde59;
     border-radius: 0 3rem 3rem 0;
     width: 50%;
+    padding: 5%;
 }
