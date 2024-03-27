@@ -4,6 +4,10 @@
 }
 
 body {
+    background-image: url(/images/loginBg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     font-family: "Monserrat Alternates", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -18,6 +22,12 @@ body {
     top: 10%;
     left: 20%;
     display: flex;
+    justify-content: center;
+}
+
+#logo{
+    width: 6rem;
+    margin-top: -3rem;
 }
 
 /*GENERAL CONFIGS*/
@@ -33,11 +43,14 @@ input{
     border-radius: 0.8em;
     padding: 0.3em;
     font-size: 1em;
+    font-weight: 600;
+    transition: all 0.4s;
 }
 
 ::placeholder{
     padding: 0.3em;
     opacity: 0.6;
+    font-weight: 600;
 }
 
 
@@ -57,7 +70,6 @@ h1{
 }
 
 .btn{
-    background-color: #ffde59;
     border-radius: 1em;
     box-shadow: 0 0 5px rgb(0, 0, 1, 0.2);
     text-decoration: none;
@@ -67,13 +79,15 @@ h1{
     padding-top: 0.4em;
     color: #fff;
     font-weight: 600;
+    font-size: 1.4em;
     text-shadow: 0 0 5px rgb(0, 0, 1, 0.2);
     margin-top: 2em;
+    transition: all 0.2s;
 }
 
 /*REGISTER - Container*/
 .left-container {
-    background-color: #ddd;
+    background-color: rgba(46, 46, 46, 0.8);
     border-radius: 3rem 0 0 3rem; 
     width: 50%;
     display: flex;
@@ -83,14 +97,52 @@ h1{
     text-align: center;
 }
 
+.left-container h1{
+    color: #ffde59;
+}
 
+.register-container input:hover{
+    background-color: #ffde59;
+    color: #2d2d2d;
+    font-weight: 600;
+}
 
-
+.register-btn:hover{
+    background: linear-gradient(50deg, #2d2d2d, #ffde59);
+    border: 4px solid #ffde59;
+    padding-top: 0.2em;
+    color: #ffde59;
+    text-shadow: none;
+    transition: all 0.4s;
+}
 
 /*LOGIN - Container*/
 .right-container {
-    background-color: #ffde59;
-    border-radius: 0 3rem 3rem 0;
+    background-color: rgba(255, 222, 89, 0.8);
+    border-radius: 0 3rem 3rem 0; 
     width: 50%;
-    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.right-container h1{
+    color: #2d2d2d;
+}
+
+.login-container input:hover{
+    background-color: #2d2d2d;
+    color: #fff;
+    font-weight: 600;
+}
+
+.login-btn:hover{
+    background: linear-gradient(50deg, #ffde59, #2d2d2d);
+    border: 4px solid #2d2d2d;
+    padding-top: 0.2em;
+    color: #2d2d2d;
+    text-shadow: none;
+    transition: all 0.4s;
 }

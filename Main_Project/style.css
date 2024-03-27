@@ -50,6 +50,7 @@ body {
     text-decoration: none;
     font-size: 1.1em;
     color: #ffde59;
+    transition: all 0.4s;
 }
 
 .navbar-item:hover {
@@ -142,30 +143,30 @@ section {
 }
 
 /*Cards stylization*/
-.card {
+.categories-card {
     background-color: rgba(0, 0, 0.15, 0.9);
     margin: 2em;
     height: 25em;
     color: #e6c339;
 }
 
-.card:hover{
+.categories-card:hover{
     box-shadow: 0 0 8px #e6c339;
     transition: all 0.4s;
 }
 
-.card img {
+.categories-card img {
     position: relative;
     width: 22em;
     aspect-ratio: 16/9;
 }
 
-.card h2 {
+.categories-card h2 {
     margin: 0.3em;
     font-size: 1.5em;
 }
 
-.card ul {
+.categories-card ul {
     margin: 0.7em;
     font-size: 1.3em;
     font-weight: 600;
