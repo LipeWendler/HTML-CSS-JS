@@ -225,6 +225,24 @@ section {
     margin-right: 1em;
 }
 
+.card-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text h3{
+    margin-left: 5em;
+    margin-top: 1em;
+}
+
+.card-text a{
+    position: relative;
+    margin-top: -1.3em;
+    margin-left: 9em;
+    font-size: 2em;
+    color: #25D366;
+}
+
 #category1{
     background-image: url(images/category1-bg.jpg);
     background-repeat: no-repeat;
