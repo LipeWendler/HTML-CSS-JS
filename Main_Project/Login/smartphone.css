@@ -17,24 +17,24 @@ body {
     position: absolute;
     box-shadow: 0 0 10px rgb(0, 0, 10, 0.7);
     border-radius: 3rem;
-    width: 60%;
-    height: 80%;
+    width: 98%;
+    height: 75%;
     top: 10%;
-    left: 20%;
+    left: 1%;
     display: flex;
     justify-content: center;
 }
 
 #logo{
-    width: 6rem;
-    margin-top: -3rem;
+    width: 5rem;
+    margin-top: -2rem;
 }
 
 /*GENERAL CONFIGS*/
 form{
     display: flex;
     flex-direction: column;
-    width: 20em;
+    width: 9em;
     gap: 1em;
 }
 
@@ -42,7 +42,7 @@ input{
     border: none;
     border-radius: 0.8em;
     padding: 0.3em;
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: 600;
     transition: all 0.4s;
 }
@@ -55,14 +55,15 @@ input{
 
 
 h1{
-    margin-bottom: 1em
+    margin-bottom: 1em;
+    font-size: 1.5em;
 }
 
 .forgot-password{
     margin-top: 3em;
     text-decoration: none;
     color: #000;
-    font-size: 0.85em;
+    font-size: 0.75em;
 }
 
 .forgot-password:hover{
@@ -74,12 +75,12 @@ h1{
     box-shadow: 0 0 5px rgb(0, 0, 1, 0.2);
     text-decoration: none;
     text-align: center;
-    width: 12em;
+    width: 7em;
     height: 2em;
     padding-top: 0.4em;
     color: #fff;
     font-weight: 600;
-    font-size: 1.4em;
+    font-size: 1em;
     text-shadow: 0 0 5px rgb(0, 0, 1, 0.2);
     margin-top: 2em;
     transition: all 0.2s;
