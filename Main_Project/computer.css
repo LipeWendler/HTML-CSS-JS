@@ -194,6 +194,10 @@ section {
     flex-wrap: wrap;
 }
 
+.streetTrack-container{
+    margin-top: 6.2em;
+}
+
 .cars-title {
     color: #ffde59;
     width: 100%;
