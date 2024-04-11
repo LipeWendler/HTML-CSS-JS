@@ -14,7 +14,7 @@ body{
 
 header{
     background-color: #294c71;
-    background-image: url(imagens/fundo.png);
+    background-image: url(Image/fundo.png);
     height: 14.5rem;
     display: flex;
 }
@@ -69,7 +69,7 @@ header{
 }
 
 .background{
-    background-image: url(imagens/fundo-caixa.png);
+    background-image: url(Image/fundo-caixa.png);
 }
 
 .destaque-container{
@@ -135,6 +135,7 @@ hr{
 }
 
 .mundo-flex{
+    display: flex;
     margin: 0.5em;
 }
 
