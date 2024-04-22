@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="meuFormulario">
+        <input placeholder="Digite um numero" type="number" name="" id="numero">
+        <button type="submit" id="botao">Calcular</button>
+    </form>
+</body>
+<script>
+    const formulario = document.getElementById("meuFormulario");
+
+    formulario.addEventListener('submit', function(evento){
+        evento.preventDefault();
+
+        let numero = document.getElementById("numero").value;
+
+        if (numero === ''){    
+            alert('Digite um numero!');
+            return false;
+        }
+        
+        numero = numero*2;
+        alert(numero);
+        return true;
+    });
+</script>
+
+</html>
