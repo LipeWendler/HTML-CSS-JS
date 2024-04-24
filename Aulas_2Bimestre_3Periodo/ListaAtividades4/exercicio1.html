@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+
+<!-- 1) Escreva um programa em JavaScript que exiba na tela o maior número
+entre dois números fornecidos pelo usuário. -->
+
+
+<body>
+    <form id="comparador">
+        <h1>Comparador de Números: o maior</h1>
+        <input id="num1" type="number" placeholder="Digite um número">
+        <input id="num2" type="number" placeholder="Digite outro número">
+        <button id="botao" type="submit">Comparar</button>
+    </form>
+</body>
+
+<script>
+    const comparador = document.getElementById("comparador");
+
+    comparador.addEventListener('submit', function (evento) {
+        evento.preventDefault();
+
+        let num1 = document.getElementById("num1").value;
+        let num2 = document.getElementById("num2").value;
+
+        if (num1 === '' || num2 === '') {
+            alert("Digite um número em cada entrada!");
+        }
+
+        num1 = parseInt(num1);
+        num2 = parseInt(num2);
+
+        if (num1 === num2) {
+            alert('Os números são iguais!');
+        }
+
+        if (num1 > num2) {
+            alert("O numero " + num1 + " é maior que " + num2);
+        }
+
+        if (num1 < num2) {
+            alert("O numero " + num2 + " é maior que " + num1);
+        }
+    });
+</script>
+
+</html>

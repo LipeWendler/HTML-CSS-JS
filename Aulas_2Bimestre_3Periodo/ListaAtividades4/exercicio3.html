@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+
+<!-- 3) Escreva um programa em JavaScript que exiba na tela uma mensagem
+de acordo com a nota do usuário. Se a nota for menor do que 6, exiba
+"Reprovado". Se a nota for maior ou igual a 6 e menor do que 8, exiba
+"Aprovado". Se a nota for maior ou igual a 8, exiba "Aprovado com louvor". -->
+
+<body>
+    <form id="verificador">
+        <h1>Verificador de Aprovação</h1>
+        <input id="nota" type="number" placeholder="Digite a nota do aluno">
+        <button id="botao" type="submit">Confirma</button>
+    </form>
+</body>
+
+<script>
+    const verificador = document.getElementById("verificador");
+
+    verificador.addEventListener('submit', function(evento){
+        evento.preventDefault();
+
+        nota = document.getElementById('nota').value;
+
+        if (nota === ''){
+            alert('Informe a nota!');
+        }
+
+        nota = parseFloat(nota);
+
+        if (nota >= 8){
+            alert('Aluno Aprovado com Louvor!');
+        }
+
+        if (nota >= 6 & nota < 8){
+            alert('Aluno Aprovado!');
+        }
+
+        if (nota < 6){
+            alert('Reprovado!');
+        }
+    });
+</script>
+
+</html>
