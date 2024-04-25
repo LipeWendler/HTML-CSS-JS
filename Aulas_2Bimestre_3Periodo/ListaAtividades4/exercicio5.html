@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercicio 5</title>
 </head>
+
+<!-- 5) Escreva um programa em JavaScript que exiba na tela uma mensagem
+de acordo com o valor de uma variável. Se a variável for igual a "a", exiba
+"A". Se a variável for igual a "b", exiba "B". Se a variável não for nem "a"
+nem "b", exiba "Outra letra". -->
+
 <body>
-    
+    <form id="analisador">
+        <h1>Análise de Variavel - A e B</h1>
+        <input id="variavel" type="text" placeholder="Informe uma variavel">
+        <button id="botao" type="submit">Analisar</button>
+    </form>
 </body>
+
+<script>
+    const analisador = document.getElementById('analisador');
+
+    analisador.addEventListener('submit', function (evento) {
+        evento.preventDefault();
+
+        let variavel = document.getElementById('variavel').value;
+
+        if (variavel === 'a' || variavel === 'A') {
+            alert('A');
+        }
+
+        if (variavel === 'b' || variavel === 'B') {
+            alert('B');
+        }
+
+        if (variavel != 'a' && variavel != 'A' && variavel != 'b' && variavel != 'B') {
+            alert('Outra letra');
+        }
+    });
+</script>
+
 </html>
