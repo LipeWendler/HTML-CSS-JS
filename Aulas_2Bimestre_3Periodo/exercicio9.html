@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 9</title>
+</head>
+
+<!-- 9) Escreva um programa em JavaScript que exiba na tela o maior número
+de um vetor. -->
+
+<body>
+    <h1>COMPARADOR DE NÚMEROS - MAIOR DENTRO DO VETOR</h1>
+    <h2>Ver resultado no Console!</h2>
+</body>
+
+<script>
+    var vetor = [2, 6, 9, 1, 14, 3, 20, 100, -1, 101];
+    var numMaior;
+    var numMenor;
+
+    for (i = 0; i < vetor.length; i++) {
+        if (i == 0) {
+            numMaior = vetor[i];
+
+            console.log(numMaior)
+        }
+
+        else {
+            if (numMaior > vetor[i]){
+                numMenor = vetor[i];
+
+                console.log(numMaior + ' é maior que ' + numMenor)
+            }
+
+            else if (numMaior < vetor[i]) {
+                numMenor = numMaior
+                numMaior = vetor[i];
+
+                console.log(numMaior + ' é maior que ' + numMenor)
+            }
+        }
+    }
+
+    console.log('Dos números: [' + vetor + ']');
+    console.log('O maior número é ' + numMaior);
+
+</script>
+
+</html>

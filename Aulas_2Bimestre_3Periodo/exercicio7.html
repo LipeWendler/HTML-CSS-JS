@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+</head>
+
+<!-- 7) Escreva um programa em JavaScript que exiba na tela o fatorial de um
+número fornecido pelo usuário. -->
+
+<body>
+    <form id="calcularFatorial">
+        <h1>FATORIAL</h1>
+        <input id="num" type="number" placeholder="Digite um numero para calcular a fatorial do mesmo"
+            style="width: 20rem;">
+        <button id="btn" type="submit">Calcular</button>
+    </form>
+</body>
+
+<script>
+    const calcularFatorial = document.getElementById('calcularFatorial');
+
+    calcularFatorial.addEventListener('submit', function (evento) {
+        evento.preventDefault();
+
+        let num = document.getElementById('num').value;
+
+        function fatorial(num) {
+            var soma = 1;
+            for (i = 1; i <= num; i++){
+                soma *= i;
+            }
+            return soma;
+        }
+        
+        alert('A fatorial de ' + num + ' é igual a ' + fatorial(num));
+        
+    });
+</script>
+
+</html>
