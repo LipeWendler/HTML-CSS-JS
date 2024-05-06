@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <div class="calculadora">
+                    <input type="text" id="resultado" class="form-control resultado" placeholder="0" disabled="disabled">
+
+                    <div class="row">
+                        <button onclick="calcular('operacao', 'c')" type="button" class="btn btn-dark btn-lg clear botao font-weight-regular">C</button>
+                        <button onclick="calcular('operacao', '/')" type="button" class="btn btn-dark btn-lg botao operator font-weight-regular">/</button>
+                        <button onclick="calcular('operacao', '*')" type="button" class="btn btn-dark btn-lg botao operator font-weight-regular">X</button>
+                    </div>
+
+                    <div class="row">
+                        <button onclick="calcular('numero', 7)" type="button" class="btn btn-dark btn-lg botao font-weight-regular">7</button>
+                        <button onclick="calcular('numero', 8)" type="button" class="btn btn-dark btn-lg botao font-weight-regular">8</button>
+                        <button onclick="calcular('numero', 9)" type="button" class="btn btn-dark btn-lg botao font-weight-regular">9</button>
+                        <button onclick="calcular('operacao', '-')" type="button" class="btn btn-dark btn-lg botao operator font-weight-regular">-</button>
+                    </div>
+
+                    <div class="row">
+                        <button onclick="calcular('numero', 4)" type="button" class="btn btn-dark btn-lg botao font-weight-regular">4</button>
+                        <button onclick="calcular('numero', 5)" type="button" class="btn btn-dark btn-lg botao font-weight-regular">5</button>
+                        <button onclick="calcular('numero', 6)" type="button" class="btn btn-dark btn-lg botao font-weight-regular">6</button>
+                        <button onclick="calcular('operacao', '+')" type="button" class="btn btn-dark btn-lg botao operator font-weight-regular">+</button>
+                    </div>
+
+                    <div class="row">
+                        <button onclick="calcular('numero', 1)" type="button" class="btn btn-dark btn-lg botao font-weight-regular">1</button>
+                        <button onclick="calcular('numero', 2)" type="button" class="btn btn-dark btn-lg botao font-weight-regular">2</button>
+                        <button onclick="calcular('numero', 3)" type="button" class="btn btn-dark btn-lg botao font-weight-regular">3</button>
+                        <button onclick="calcular('operacao', '=')" type="button" class="btn btn-dark btn-lg botao enter font-weight-regular">=</button>
+                    </div>
+
+                    <div class="row" style="margin-top: -60px;">
+                        <button onclick="calcular('numero', 0)" type="button" class="btn btn-dark btn-lg botao zero font-weight-regular">0</button>
+                        <button onclick="calcular('operacao', '.')" type="button" class="btn btn-dark btn-lg botao font-weight-regular">.</button>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<script>
+    function calcular(tipo, valor){
+        if (tipo === 'operacao'){
+            if (valor === 'c'){
+                document.getElementById('resultado').value = '';
+            }
+
+            if (valor === '+' || valor === '-' || valor === '*' || valor === '/' || valor === '.'){
+                document.getElementById('resultado').value += valor;
+            }
+
+            if (valor === '='){
+                let resultado = eval(document.getElementById('resultado').value);
+                document.getElementById('resultado').value = resultado;
+            }
+        }
+
+        else if (tipo === 'numero'){
+            document.getElementById('resultado').value += valor;
+        }
+    }
+</script>
+
+</html>
